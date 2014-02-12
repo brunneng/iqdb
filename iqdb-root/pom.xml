@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>net.sf.brunneng.iqdb</groupId>
+   <artifactId>iqdb-root</artifactId>
+   <packaging>pom</packaging>
+   <version>${iqdb.version}</version>
+   <name>iqdb</name>
+
+   <modules>
+      <module>iqdb-web-app</module>	 
+	  <module>iqdb-db-prepare</module>
+	  <module>iqdb-glassfish-deployer</module>
+	  <module>iqdb-installation-pack</module>
+   </modules>
+   
+   <properties>
+        <iqdb.version>0.1-SNAPSHOT</iqdb.version>
+		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+   
+</project>
