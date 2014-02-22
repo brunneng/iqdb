@@ -4,4 +4,4 @@
 *.jar
 *.war
 *.ear
-/iqdb-web-app/target/
+target/
