@@ -1,2 +1,2 @@
-call mvn install
+call mvn -Pdev-env clean install
 pause
