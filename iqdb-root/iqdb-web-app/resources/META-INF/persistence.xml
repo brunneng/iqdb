@@ -3,5 +3,6 @@
   <persistence-unit name="iqdb-PU" transaction-type="JTA">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <jta-data-source>${iqdb.datasource.name}</jta-data-source>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
   </persistence-unit>
 </persistence>

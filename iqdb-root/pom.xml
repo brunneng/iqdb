@@ -31,6 +31,9 @@
                 
         <javaee.web.api.version>7.0</javaee.web.api.version>
         <hibernate.version>4.3.4.Final</hibernate.version>
+        <eclipselink.version>2.5.1</eclipselink.version>
+        
+        <java.object.merger.version>0.8.5.1</java.object.merger.version>
                 
     </properties>       
    
@@ -137,6 +140,25 @@
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-jpamodelgen</artifactId>
                 <version>${hibernate.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.eclipse.persistence</groupId>
+                <artifactId>eclipselink</artifactId>
+                <version>${eclipselink.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.persistence</groupId>
+                <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
+                <version>${eclipselink.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            
+            <dependency>
+                <groupId>net.sf.brunneng.jom</groupId>
+                <artifactId>java-object-merger</artifactId>
+                <version>${java.object.merger.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
