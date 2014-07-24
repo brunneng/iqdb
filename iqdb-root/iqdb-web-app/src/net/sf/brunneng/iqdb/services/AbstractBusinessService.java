@@ -6,7 +6,7 @@
 
 package net.sf.brunneng.iqdb.services;
 
-import javax.annotation.Resource;
+import javax.ejb.EJB;
 
 /**
  *
@@ -14,6 +14,6 @@ import javax.annotation.Resource;
  */
 public class AbstractBusinessService {
       
-   @Resource
+   @EJB
    protected TranslatorService translator;
 }

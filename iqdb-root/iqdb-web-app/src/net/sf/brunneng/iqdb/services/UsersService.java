@@ -8,6 +8,7 @@ package net.sf.brunneng.iqdb.services;
 
 import net.sf.brunneng.iqdb.model.UserModel;
 import javax.annotation.Resource;
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.transaction.Transactional;
 import net.sf.brunneng.iqdb.dao.UserDao;
@@ -21,7 +22,7 @@ import net.sf.brunneng.iqdb.dbmodel.User;
 @Transactional
 public class UsersService extends AbstractBusinessService {
    
-   @Resource
+   @EJB
    private UserDao userDao;
    
    public void createNewUser(UserModel userModel) {

@@ -8,6 +8,7 @@ package net.sf.brunneng.iqdb.web;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.inject.Model;
 import javax.inject.Named;
 import net.sf.brunneng.iqdb.model.UserModel;
 import net.sf.brunneng.iqdb.services.UsersService;
@@ -24,9 +25,20 @@ public class UserManagementBean {
    @EJB
    private UsersService userService;
    
-   public String createNewUser(UserModel userModel) {
+   @Model
+   private UserModel userModel = new UserModel();
+   
+   public String createNewUser() {
       userService.createNewUser(userModel);
       
       return null;
    }
+
+    public UsersService getUserService() {
+        return userService;
+    }
+
+    public void setUserService(UsersService userService) {
+        this.userService = userService;
+    }
 }
