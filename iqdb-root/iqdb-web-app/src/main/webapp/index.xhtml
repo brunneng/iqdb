@@ -16,16 +16,16 @@
                          title="Enter your name: "
                          value="#{userModel.name}"
                          required="true"
-                         requiredMessage="Error: A name is required."
+                         requiredMessage="Error: name is required."
                          maxlength="25" />
             <h:inputText id="email"
                          title="Enter your email: "
                          value="#{userModel.email}"
                          required="true"
-                         requiredMessage="Error: A name is required."
+                         requiredMessage="Error: email is required."
                          maxlength="25" />
             <h:commandLink id="Save" 
-                           action="#{userManagementBean.createNewUser}">
+                           action="#{userManagementBean.createNewUser(userModel)}">
                 Save new user
             </h:commandLink>
         </h:form>

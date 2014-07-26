@@ -25,10 +25,7 @@ public class UserManagementBean {
    @EJB
    private UsersService userService;
    
-   @Model
-   private UserModel userModel = new UserModel();
-   
-   public String createNewUser() {
+   public String createNewUser(UserModel userModel) {
       userService.createNewUser(userModel);
       
       return null;
