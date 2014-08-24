@@ -30,7 +30,7 @@
         <commons.cli.version>1.2</commons.cli.version>
                 
         <javaee.web.api.version>7.0</javaee.web.api.version>
-        <hibernate.version>4.3.6.Final</hibernate.version>
+        <hibernate.version>4.3.5.Final</hibernate.version>
         
         <java.object.merger.version>0.8.5.1</java.object.merger.version>
                 

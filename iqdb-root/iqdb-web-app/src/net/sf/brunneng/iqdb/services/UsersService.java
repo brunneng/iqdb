@@ -26,6 +26,7 @@ public class UsersService extends AbstractBusinessService {
    private UserDao userDao;
    
    public void createNewUser(UserModel userModel) {
+      userModel.setRole("admin");
       User user = translator.getMergingContext().map(userModel, User.class);      
       userDao.create(user);
    }

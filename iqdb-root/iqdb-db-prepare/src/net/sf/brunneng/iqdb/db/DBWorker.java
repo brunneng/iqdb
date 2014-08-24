@@ -125,7 +125,7 @@ public class DBWorker {
    private void executeUpdate() {      
       System.out.println(String.format("Execution of '%s' action started", DBAction.UPDATE));
       
-      mainFactory.createDbMaintainer().updateDatabase(false);
+      mainFactory.createDbMaintainer().updateDatabase(false);      
       
       System.out.println(String.format("Execution of '%s' action successfully finished", DBAction.UPDATE));
    }
